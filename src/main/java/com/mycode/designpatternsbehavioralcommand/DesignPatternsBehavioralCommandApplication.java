@@ -1,8 +1,7 @@
 package com.mycode.designpatternsbehavioralcommand;
 
-import com.mycode.designpatternsbehavioralcommand.commands.AdditionCommand;
-import com.mycode.designpatternsbehavioralcommand.commands.MultiplyCommand;
-import com.mycode.designpatternsbehavioralcommand.invokers.Calculator;
+import com.mycode.designpatternsbehavioralcommand.receivers.MultiplyReceiver;
+import com.mycode.designpatternsbehavioralcommand.commands.Calculator;
 
 public class DesignPatternsBehavioralCommandApplication {
 
@@ -10,8 +9,8 @@ public class DesignPatternsBehavioralCommandApplication {
 
         Calculator calculator = new Calculator();
 
-        calculator.addCommand(new MultiplyCommand(3, 5));
+        calculator.setReceiver(new MultiplyReceiver(3, 5));
 
-        calculator.performCommand();
+        calculator.perform();
     }
 }

@@ -1,5 +1,5 @@
 package com.mycode.designpatternsbehavioralcommand.commands;
 
 public interface Command {
-    void execute();
+    void perform();
 }

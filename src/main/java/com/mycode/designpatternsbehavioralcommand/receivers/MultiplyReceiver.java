@@ -1,11 +1,11 @@
-package com.mycode.designpatternsbehavioralcommand.commands;
+package com.mycode.designpatternsbehavioralcommand.receivers;
 
-public class MultiplyCommand implements Command {
+public class MultiplyReceiver implements Receiver {
 
     private int firstNumber;
     private int secondNumber;
 
-    public MultiplyCommand(int firstNumber, int secondNumber) {
+    public MultiplyReceiver(int firstNumber, int secondNumber) {
         this.firstNumber = firstNumber;
         this.secondNumber = secondNumber;
     }
